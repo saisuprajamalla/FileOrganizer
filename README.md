@@ -7,7 +7,7 @@ This application allows users to create, move, delete, and list directories in a
 ## Requirements
 
 - For running the application: Java Runtime Environment (JRE) 11 or higher
-- For compiling the source code (if needed): Java Development Kit (JDK) 11 or higher
+- For compiling the source code (if needed): Java Development Kit (JDK) 11 or higher. Compiled code is already uploaded.
 
 ## Instructions
 
@@ -17,7 +17,9 @@ This application allows users to create, move, delete, and list directories in a
 1. Clone the repo
 2. cd FileOrganizer/src
 3. Run "java -jar DirectoryTreeApp.jar input.txt" command
-4. You will see the output displayed.
+4. You will see the output displayed as shown below.
+
+<img width="591" alt="Screenshot 2024-07-03 at 2 01 45 AM" src="https://github.com/saisuprajamalla/FileOrganizer/assets/32082372/2fb9c20b-c95c-4d45-b2cd-ff962dbe6226">
 
 ## Run Unit tests
 1. cd FileOrganizer
