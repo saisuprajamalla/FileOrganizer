@@ -27,7 +27,7 @@ This application allows users to create, move, delete, and list directories in a
 ### Running the Application with Compiled Classes (Needs JRE)
 
 ## Run the Application from Terminal:
-1. Clone the repo
+1. Clone the repo from terminal. "git clone https://github.com/saisuprajamalla/FileOrganizer.git"
 2. cd FileOrganizer/src
 3. Run "java -jar DirectoryTreeApp.jar input.txt" command
 4. You will see the output displayed as shown below.
