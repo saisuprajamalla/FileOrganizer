@@ -1,4 +1,4 @@
-# Directory Tree Command Line Application
+# Directory Tree Processor Application
 
 ## Overview
 
