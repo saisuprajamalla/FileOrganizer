@@ -6,8 +6,21 @@ This application allows users to create, move, delete, and list directories in a
 
 ## Requirements
 
-- For running the application: Java Runtime Environment (JRE) 11 or higher
-- For compiling the source code (if needed): Java Development Kit (JDK) 11 or higher. Compiled code is already uploaded.
+ For running the application: Java Runtime Environment (JRE) 11 or higher
+  1. check if JRE is installed using "java -version".
+  2. if not installed
+     follow https://medium.com/@kirebyte/using-homebrew-to-install-java-jdk11-on-macos-2021-4a90aa276f1c and install it for MAC.
+     or follow https://www.geeksforgeeks.org/how-to-download-and-install-java-for-64-bit-machine/ for windows.
+
+### Note:
+- Compiled code is already uploaded.
+- "junit-platform-console-standalone-1.8.1.jar" is added to the repo to run unit tests from terminal.
+
+### Key Considerations
+
+- Case Sensitivity: Directory names are case-sensitive, following typical file system behavior. This decision ensures that directories with the same name but different cases are treated as distinct entities.
+
+- Indentation: The LIST command outputs the directory structure with proper indentation to represent the hierarchy. The root directory is printed without indentation, while subsequent levels are indented for clarity.
 
 ## Instructions
 
@@ -47,11 +60,5 @@ This application allows users to create, move, delete, and list directories in a
 4. Main Class: Acts as the entry point of the application. It initializes the DirectoryCommandProcessor and processes the commands provided in the input file or standard input.
    
 5. Error Handling: The implementation includes basic error handling for invalid commands and non-existent directories. Custom error messages are provided to help users understand what went wrong.
-
-### Key Considerations
-
-- Case Sensitivity: Directory names are case-sensitive, following typical file system behavior. This decision ensures that directories with the same name but different cases are treated as distinct entities.
-
-- Indentation: The LIST command outputs the directory structure with proper indentation to represent the hierarchy. The root directory is printed without indentation, while subsequent levels are indented for clarity.
 
 
