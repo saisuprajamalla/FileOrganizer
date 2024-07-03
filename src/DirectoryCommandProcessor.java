@@ -12,10 +12,20 @@ public class DirectoryCommandProcessor {
     private static final Logger LOGGER = Logger.getLogger(DirectoryCommandProcessor.class.getName());
     private final DirectoryTree tree;
 
+    /**
+     * Constructs a DirectoryCommandProcessor with the specified DirectoryTree.
+     *
+     * @param tree the DirectoryTree to operate on
+     */
     public DirectoryCommandProcessor(DirectoryTree tree) {
         this.tree = tree;
     }
 
+    /**
+     * Processes commands from the specified input file or standard input.
+     *
+     * @param inputFilePath the path to the input file containing commands, or null to read from standard input
+     */
     public void processCommands(String inputFilePath) {
         BufferedReader reader = null;
         try {
@@ -36,6 +46,11 @@ public class DirectoryCommandProcessor {
         }
     }
 
+    /**
+     * Processes a single command line.
+     *
+     * @param commandLine the command line to process
+     */
     private void processCommand(String commandLine) {
         String[] commandParts = commandLine.split(" ");
         String command = commandParts[0];
@@ -50,7 +65,6 @@ public class DirectoryCommandProcessor {
                 tree.delete(commandParts[1]);
                 break;
             case "LIST":
-                System.out.println("LIST");
                 tree.list();
                 break;
             default:
@@ -59,6 +73,11 @@ public class DirectoryCommandProcessor {
         }
     }
 
+    /**
+     * Closes the BufferedReader, logging any IOException that occurs.
+     *
+     * @param reader the BufferedReader to close
+     */
     private void closeReader(BufferedReader reader) {
         try {
             if (reader != null) {
