@@ -22,7 +22,7 @@ This application allows users to create, move, delete, and list directories in a
 <img width="591" alt="Screenshot 2024-07-03 at 2 01 45 AM" src="https://github.com/saisuprajamalla/FileOrganizer/assets/32082372/2fb9c20b-c95c-4d45-b2cd-ff962dbe6226">
 
 ## Run Unit tests
-1. cd FileOrganizer
+1. go back to FileOrganizer folder ( command: cd ..)
 2. Run "java -jar junit-platform-console-standalone-1.8.1.jar --class-path out/production/FileOrganizer --scan-class-path"
 3. You should see output as shown below
 
